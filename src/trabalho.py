@@ -1,6 +1,5 @@
 import cv2
 import numpy as np
-from numpy.random.mtrand import negative_binomial
 import streamlit as st
 from PIL import Image
 
@@ -62,7 +61,7 @@ imagens = [so_r, so_g, so_b]
 rgb_index = col2.slider("Canal", 0, 2, 0)
 col2.image(imagens[rgb_index], caption=f"só {['R', 'G', 'B'][rgb_index]}")
 
-st.header("10. Negativo numa região")
+st.header("8. Negativo")
 col1, col2 = st.columns(2)
 col1.image(img, caption="Imagem original")
 
